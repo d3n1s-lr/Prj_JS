@@ -1,13 +1,12 @@
 function calcular() {
-  const num1 = parseFloat(document.getElementById("peso").value);
-  const num2 = parseFloat(document.getElementById("altura").value);
-  const resul = document.getElementById("resultado");
+  const num1 = parseFloat(document.getElementById("num1").value);
+  const num2 = parseFloat(document.getElementById("num2").value);
 
   if (isNaN(num1) || isNaN(num2)) {
-    resul.textContent = "Digite dois números válidos.";
+    console.log("Digita numero que pode po");
     return;
   }
 
   const soma = num1 + num2;
-  resul.textContent = "A soma é " + soma;
+  console.log("A soma é " + soma);
 }
